@@ -26,5 +26,20 @@ class NoteBook extends Pc {
   }
 }
 
+class Test extends NoteBook {
+  constructor(name, brand, price, ageOfRelease, ram, webCam) {
+    super(name, brand, price, ageOfRelease, ram);
+    this.webCam = webCam;
+  }
+
+  print() {
+    super.print();
+    console.log(`La webcam ha una qualità video di ${this.webCam}`);
+  }
+}
+
 const noteBook = new NoteBook("NoteBook Pro", "Lenovo", 2000, 2016, 32);
 noteBook.print();
+
+const newTest = new Test("MacBook", "Apple", 900, 2014, 8, "1080p");
+newTest.print();
