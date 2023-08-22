@@ -26,7 +26,7 @@ class NoteBook extends Pc {
   }
 }
 
-class Test extends NoteBook {
+class MacBook extends NoteBook {
   constructor(name, brand, price, ageOfRelease, ram, webCam) {
     super(name, brand, price, ageOfRelease, ram);
     this.webCam = webCam;
@@ -41,5 +41,5 @@ class Test extends NoteBook {
 const noteBook = new NoteBook("NoteBook Pro", "Lenovo", 2000, 2016, 32);
 noteBook.print();
 
-const newTest = new Test("MacBook", "Apple", 900, 2014, 8, "1080p");
+const newTest = new MacBook("MacBook", "Apple", 900, 2014, 8, "1080p");
 newTest.print();
